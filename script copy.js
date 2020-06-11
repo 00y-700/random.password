@@ -1,18 +1,49 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
+// Constants for Input
+const out = document.querySelector("#password")
+const passLength = document.querySelector("#pLin");
+const lc = document.querySelector("#lower-case");
+const uc = document.querySelector("#upper-case");
+const nm = document.querySelector("#number");
+const sc = document.querySelector("#special");
+const generateBtn = document.querySelector("#generate");
+
+
+// Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", userParameters);
 
+
+
+// //Random Character Functions
+// //Functions adapted from Florian Pop https://codepen.io/FlorinPop17/pen/BaBePej?editors=0010
+
+// function getLowerCaseRndm() {
+//     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);  
+// }
+
+// console.log(getRandomLowerCase);
+
+// function getUpperCaseRndm() {
+//   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);  
+// }
+
+// console.log(getRandomUpperCase);
+
+// function getNumRndm() {
+//   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);  
+// }
+
+// console.log(getRandomNumber);
 
 // function getSymbolRndm() {
 //   const symbols = "!@#$%^&*(),.?/[]"
@@ -26,7 +57,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // user answers to password parameters function
 
-function generatePassword() {
+function userParameters() {
   const passLength = parseInt(prompt("How long do you want your password? (8-128)"));
   if (typeof(passLength) === "number" && passLength >= 8 && passLength <= 128) {
     console.log(passLength)
@@ -68,5 +99,7 @@ function generatePassword() {
   else {
     console.log("no symbol")
   }
-  // genaratePassword(passLength, inputLC, inputUC, inputNum, inputSym);
+  genaratePassword(passLength, inputLC, inputUC, inputNum, inputSym);
 };
+
+

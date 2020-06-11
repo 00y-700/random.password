@@ -1,4 +1,6 @@
-//DOM Elements
+//Functions adapted from Florin Pop https://codepen.io/FlorinPop17/pen/BaBePej?editors=0010
+
+//Page Elements
 var passOut = document.querySelector("#password");
 var generateBtn = document.querySelector("#generate");
 var passLength = document.querySelector("#passLen");
@@ -27,12 +29,17 @@ generateBtn.addEventListener("click", function writePass() {
 
 
 
-    passOut.innerHTML = passwordOut(lower, upper, number. symbol );
+    passOut.innerHTML = passwordOut(lower, upper, number, symbol, length);
     // console.log(length)
     // console.log(lower)
     // console.log(upper)
 });
 
+function passwordOut(lc, uc, nm, sc, length) {
+    let password = '';
+    var typesIn = lc + uc + nm + sc;
+    var typesArray = 
+}
 
 
 // const randomGens = {
