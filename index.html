@@ -24,6 +24,13 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <section>
+          <div class="slidecontainer">
+            <label>Password Length</label>
+            <input type="range" id="passLen" name="PL" min="8" max="128" value="0" oninput="pLin.value = passLen.value">
+            <output id="pLin" for="PL">0</output>
+          </div>
+        </section>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
