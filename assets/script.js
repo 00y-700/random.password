@@ -38,7 +38,7 @@ function generatePassword() {
   }
   const inputLC = confirm("Would you like lower case letters in your password?");
   if (inputLC === true) {
-    getLowerCaseRndm
+    getLowerCaseRndm()
     console.log("lower confrimed")
   }
   else {
@@ -46,7 +46,7 @@ function generatePassword() {
   }
   const inputUC = confirm("Would you like upper case letters in your password?");
   if (inputUC === true) {
-    getUpperCaseRndm
+    getUpperCaseRndm()
     console.log("upper confirmed")
   }
   else {
@@ -54,7 +54,7 @@ function generatePassword() {
   }
   const inputNum = confirm("Would you like numbers in your password?");
   if (inputNum === true) {
-    getNumRndm
+    getNumRndm()
     console.log("number confirmed")
   }
   else {
@@ -62,7 +62,7 @@ function generatePassword() {
   }
   const inputSym = confirm("Would you like special characters in your password?");
   if (inputSym === true) {
-    getSymbolRndm
+    getSymbolRndm()
     console.log("symbol confirmed")
   }
   else {
