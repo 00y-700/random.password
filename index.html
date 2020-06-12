@@ -24,33 +24,6 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <section>
-          <div class="slidecontainer">
-            <label>Password Length</label>
-            <input type="range" id="passLen" name="PL" min="8" max="128" value="8" oninput="pLin.value = passLen.value">
-            <output id="pLin" for="PL">8</output>
-          </div>
-          <label class="switch">
-            Lower Case
-            <input type="checkbox" id="lower-case">
-            <span class="slider"></span>
-          </label>
-          <label class="switch">
-            Upper Case
-            <input type="checkbox" id="upper-case">
-            <span class="slider"></span>
-          </label>
-          <label class="switch">
-            Number
-            <input type="checkbox" id="number">
-            <span class="slider"></span>
-          </label>
-          <label class="switch">
-            Special Character
-            <input type="checkbox" id="special">
-            <span class="slider"></span>
-          </label>
-        </section>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>

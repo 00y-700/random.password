@@ -13,17 +13,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
-// function getSymbolRndm() {
-//   const symbols = "!@#$%^&*(),.?/[]"
-//   return symbols[Math.floor(Math.random() * symbols.length)];  
-// }
-
-// console.log(getRandomSymbol);
-
-
-
-
 // user answers to password parameters function
 
 function generatePassword() {
@@ -70,3 +59,23 @@ function generatePassword() {
   }
   // genaratePassword(passLength, inputLC, inputUC, inputNum, inputSym);
 };
+
+function getLowerCaseRndm() {
+  const lowercase = "abcdefghijklmnopqrstuvwxyz"
+  return lowercase[Math.floor(Math.random() * lowercase.length)];
+}
+
+function getUpperCaseRndm() {
+  const uppercase = "QWERTYUIOPASDFGHJKLZXCVBNM"
+  return lowercase[Math.floor(Math.random() * lowercase.length)];
+}
+
+function getNumRndm() {
+  const numbers = "1234567890"
+  return numbers[Math.floor(Math.random() * numbers.length)];
+}
+
+function getSymbolRndm() {
+  const symbols = "!@#$%^&*()_-[]/?"
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
